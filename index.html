@@ -36,11 +36,11 @@ p {color: red}
         padding: 0;
         overflow: hidden;
       }
-    .container {
+    .my-button {
+        background-color:black;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
     }
 </style>
     
@@ -69,10 +69,11 @@ p {color: red}
 <button type="button"
         onclick="document.getElementById('demo').innerHTML = Date()"
         style="color:black"
-    class="container"
+        class="my-button"
 >
     点击我来显示日期和时间
 </button>
+    
 <p id="demo"></p>
     
 </div>
