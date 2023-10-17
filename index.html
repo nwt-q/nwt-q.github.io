@@ -1,91 +1,308 @@
 <!DOCTYPE html>
+<html class="no-js" lang="zh"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>P1000 超级玛丽游戏 - 某谷 | 计算机科学教育新生态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+        overflow: visible;
+    }
 
-<html lang="zh-cn">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="renderer" content="webkit">
-    
-<head>
+    .svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
+    }
+    .svg-inline--fa.fa-w-12 {
+        width: 0.75em;
+    }
+    .svg-inline--fa.fa-w-20 {
+        width: 1.25em;
+    }
 
-    <meta charset="UTF-8">
 
-    <title>2c237c6</title>
+    .fa-layers svg.svg-inline--fa {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .fa-ul > li {
+        position: relative;
+    }
 
-    <link rel="icon" href="伊雷娜.jpg" type="伊雷娜.jpg">
+    </style><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen">
+    <link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20231010">
+    <script>
+        window._feInjection = JSON.parse(decodeURIComponent();
+        window._feConfigVersion=1696928455;
+        window._tagVersion=1697378258;
+    </script>
+    <script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20231010" charset="utf-8" defer=""></script>
 
     <style type="text/css">
-        h2 {color: black}
-        a{color:green}
-        br{color:yellow}
-        p {color: red}
+        .resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}
     </style>
+    <style type="text/css">
+        .float-card[data-v-0bcd986d]{width:390px;box-shadow:0 0 6px 4px rgba(26,26,26,.1)
+        !important;font-size:1rem;line-height:1.1}  .user-header-top[data-v-0bcd986d]{position:relative;height:100px;background-size:cover;background-position:center}
+        .avatar[data-v-0bcd986d]{width:60px;height:60px;border-radius:50%;position:absolute;top:calc(100px - 60px / 2);left:12px}
+        .user-info[data-v-0bcd986d]{padding:.25em .625em .625em 80px}  .user-info>*[data-v-0bcd986d]{margin:.6em 0}
+        .dropdown-operations[data-v-0bcd986d]{margin-top:10px;width:5rem;color:#333;background:#fff;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,.15),inset 0 0 1px rgba(0,0,0,.5);user-select:none}  .dropdown-operations>ul[data-v-0bcd986d]{padding:0;margin:0;max-height:10em;list-style:none;outline:none;font-size:.875rem}  .dropdown-operations>ul li[data-v-0bcd986d]{display:block;padding:.3em 0;cursor:pointer;text-align:center}  .dropdown-operations>ul li[data-v-0bcd986d]:hover{background:#eee}</style><style></style><style type="text/css">.top-progress[data-v-6330a2e0]{position:fixed;right:0;left:0;height:4px;overflow:hidden;z-index:99}  .bar[data-v-6330a2e0]{height:100%;border-top-right-radius:2px;border-bottom-right-radius:2px;transition:width .2s ease;opacity:1;animation:loading-progress-data-v-6330a2e0 10s cubic-bezier(.22,.86,0,.8);animation-fill-mode:forwards}  .done[data-v-6330a2e0]{animation:none;opacity:0;width:100%;transition:opacity .2s ease .2s}  @keyframes loading-progress-data-v-6330a2e0{from{width:5%} to{width:99%}}</style><style type="text/css">nav[data-v-12f19ddc]{position:fixed;width:3.7em;height:100%;display:flex;flex-direction:column;text-align:center;line-height:1.2;z-index:5}  .logo-wrap[data-v-12f19ddc]{display:block;box-sizing:border-box;padding:1em;width:3.7em;text-align:center;height:4em;overflow:hidden;outline:0}  .logo-wrap>img[data-v-12f19ddc]{max-width:100%;max-height:100%}  .user-nav[data-v-12f19ddc]{display:none;height:3.4em;align-items:center;background:rgba(255,255,255,.5);border-radius:1em;margin:.3em;padding:0 .8em}</style><style type="text/css">a[data-v-639bc19b]{display:block;padding:.5em .5em;text-decoration:none}
 
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        #fullscreen-image {
-            background-image: url(小鸟游六花.jpg);
-            background-size: cover;
-            background-position: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        #demo {
-            text-align: center;
-        }
+.text[data-v-639bc19b]{font-size:.8em;vertical-align:middle}</style>
+    <style type="text/css">
+        a[data-v-0640126c]{text-decoration:none}
+        a.color-none[data-v-0640126c]:hover{text-decoration:none}
     </style>
+    <style type="text/css">
+        .header[data-v-2dfcfd35]{color:#fff}
+        h1[data-v-2dfcfd35]{margin-top:.5em;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+        .bread-crumb[data-v-2dfcfd35]{padding-top:1.5em;font-size:.8em;color:#aaa}
+        .functional[data-v-2dfcfd35]{padding-top:.8em}
+        .operation[data-v-2dfcfd35]{display:flex;align-items:baseline;color:#fff}
+        .stat[data-v-2dfcfd35]{float:right}@media (max-width:576px){
+            .bread-crumb[data-v-2dfcfd35]{font-size:.875em}
+            .stat[data-v-2dfcfd35]{float:left}
+            .functional[data-v-2dfcfd35]{display:flex;
+                flex-direction:column;padding-top:0}
+            .operation[data-v-2dfcfd35]{margin-top:1em;
+                margin-bottom:1em;display:flex;flex-direction:column}
+            .operation>*[data-v-2dfcfd35]{width:100%;margin-bottom:.5em}}
+        /*顶部样式*/
+    </style>
+    <style type="text/css">/*提交,通过部分*/
+    nav[data-v-c9185fa2]::after{content:" ";white-space:pre}
+    .link[data-v-c9185fa2],.text[data-v-c9185fa2]{color:rgba(255,255,255,.75)}
+    .link[data-v-c9185fa2]:hover{color:#fff}</style><style type="text/css">
+    .stat[data-v-3c4577b8]{display:inline-block}
+    .field[data-v-3c4577b8]{display:inline-block;padding:0 .8em}
+    .color-default>.field[data-v-3c4577b8]{color:#666;border-left:1px solid #ddd}
+    .color-inverse>.field[data-v-3c4577b8]{color:#fff;border-left:1px solid #fff}
+    .stat>.field[data-v-3c4577b8]:first-child{border-left:none}
+    .key[data-v-3c4577b8],.value[data-v-3c4577b8]{display:block;text-align:center}
+    .value[data-v-3c4577b8]{line-height:1.5;font-weight:700}@media (max-width:576px){
+        .key[data-v-3c4577b8]{margin-left:.8em;font-weight:400}
+        .value[data-v-3c4577b8]{margin-left:1em;font-weight:400;line-height:unset}
+        .stat[data-v-3c4577b8]{float:none;display:flex;justify-content:flex-start;flex-wrap:wrap;flex-direction:row}
+        .field[data-v-3c4577b8]{padding:0}  .color-default>.field[data-v-3c4577b8],
+                                            .color-inverse>.field[data-v-3c4577b8]{border-left:none;display:flex;flex-direction:row;padding:0;margin-bottom:.5em;min-width:50%}}
+</style>
+    <style type="text/css">/*题单对齐部分*/
+    button[data-v-7ade990c]{display:inline-block;flex:none;outline:0;cursor:pointer;color:#fff;font-weight:inherit;line-height:1.5;text-align:center;vertical-align:middle;background:0 0;border-radius:3px;border:1px solid}
+    button[data-v-7ade990c]:disabled{opacity:.65;cursor:not-allowed}</style>
+    <style id="ace-tm">
+
+        /*# sourceURL=ace/css/ace-tm */</style>
+
+    <style type="text/css">/*上半部分对齐*/
+    hr[data-v-ea4425c6]{margin:.8em 0;border:1px solid #e8e8e8}
+    ul[data-v-ea4425c6]{list-style:none;margin:0;padding:0}
+    li[data-v-ea4425c6]{margin-bottom:.5em;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+    li[data-v-ea4425c6]:last-child{margin-bottom:0}  .problem-card[data-v-ea4425c6]{position:relative}
+    .action[data-v-ea4425c6]{position:absolute;top:1.3em;right:1.3em}
+    .copy-input[data-v-ea4425c6]{position:absolute;left:-2333px}
+    .hide-side[data-v-ea4425c6]{margin-left:.5em}@media(max-width: 576px)
+    {.hide-side[data-v-ea4425c6]{display:none}}
+    </style>
+    <style type="text/css">
+        .card[data-v-f9624136]
+        {display:block;margin-bottom:1.3em;background-color:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(26,26,26,.1);
+            box-sizing:border-box}
+        .padding-default[data-v-f9624136]
+        {padding:1.3em}</style>
+    <style type="text/css">.stats[data-v-bd496524]{display:inline-block}  .stats.normal .field[data-v-bd496524]{display:inline-block;padding:0 .8em}  .stats.normal .key[data-v-bd496524],.stats.normal .value[data-v-bd496524]{display:block;text-align:center;white-space:nowrap}  .stats.tiled .field[data-v-bd496524]{display:inline-block;margin-right:.6em}  .stats.tiled .field[data-v-bd496524]:last-child{margin-right:unset}  .stats.tiled .field .value[data-v-bd496524]{margin-left:.2em}</style><style type="text/css">h2[data-v-16db0c63]{margin-top:1.5em}  h2[data-v-16db0c63]:first-child{margin-top:0}  .sample[data-v-16db0c63]{margin-top:1.5em}
+
+.attachments>.item>*[data-v-16db0c63]{display:table-cell;padding-top:2px;padding-bottom:2px}  .attachments>.item[data-v-16db0c63]>:not(:first-child){padding-left:.5em}  .attachments>.item[data-v-16db0c63]>:not(:last-child){padding-right:.5em}</style><style type="text/css">.marked[data-v-e5ad98f0] h1{font-size:2em}  .marked[data-v-e5ad98f0] h2{font-size:1.5em}  .marked[data-v-e5ad98f0] h3{font-size:1.17em}  .marked[data-v-e5ad98f0] h5{font-size:.83em}  .marked[data-v-e5ad98f0] h6{font-size:.67em}  .marked[data-v-e5ad98f0] img{max-width:100%}  .marked[data-v-e5ad98f0] p{margin:1rem 0}  .marked[data-v-e5ad98f0] h1,.marked[data-v-e5ad98f0] h2,.marked[data-v-e5ad98f0] h3,.marked[data-v-e5ad98f0] h4,.marked[data-v-e5ad98f0] h5,.marked[data-v-e5ad98f0] h6{margin:.5rem 0}  .marked[data-v-e5ad98f0] h1,.marked[data-v-e5ad98f0] h2{padding-bottom:.2em;border-bottom:solid 1px #eee}
+.marked[data-v-e5ad98f0] ol,.marked[data-v-e5ad98f0] ul{padding-left:1.5em}
+.marked[data-v-e5ad98f0] ul{list-style:outside disc}
+.marked[data-v-e5ad98f0] ol{list-style:outside decimal}
+.marked[data-v-e5ad98f0] hr{margin:1em 0;height:0;border:none;border-bottom:solid 1px #eee}
+.marked[data-v-e5ad98f0] code,.marked[data-v-e5ad98f0] pre{font-family:monospace;font-size:.875em;background-color:#fafafa;border:1px solid #e8e8e8;border-radius:2px}  .marked[data-v-e5ad98f0] code{margin:0 .2em;padding:.1em .2em;white-space:nowrap;tab-size:4;-moz-tab-size:4}  .marked[data-v-e5ad98f0] pre{margin:0;padding:1em;overflow-y:auto}  .marked[data-v-e5ad98f0] pre>code{font-size:unset;margin:0;padding:0;white-space:pre;border:none}</style><style type="text/css">span[data-v-71731098]{display:inline-block;padding:0 8px;box-sizing:border-box;font-weight:400;line-height:1.5;border-radius:2px}</style><style type="text/css">.lfe-tooltip-theme{display:block !important;z-index:10000}  .lfe-tooltip-theme .tooltip-inner{background:#000;color:#fff;border-radius:4px;padding:5px 10px 4px}</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}  .resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">.dropdown[data-v-1f03983a]{--duration: var(--dropdown-transition-duration, .15s);--transitions: opacity var(--duration) ease-out, top var(--duration) ease-out;position:absolute;opacity:0;transition:z-index 0s var(--duration),var(--transitions);pointer-events:none;z-index:-2147483648}</style>
 
     <style type="text/css">
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .my-button {
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-        }
-    </style>
+        .resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css"></style>
+    <style type="text/css">.float-card[data-v-0bcd986d]{width:390px;box-shadow:0 0 6px 4px rgba(26,26,26,.1)
+    !important;font-size:1rem;line-height:1.1}
+    .user-header-top[data-v-0bcd986d]{position:relative;height:100px;background-size:cover;background-position:center}
+    .avatar[data-v-0bcd986d]{width:60px;height:60px;border-radius:50%;position:absolute;top:calc(100px - 60px / 2);left:12px}  .user-info[data-v-0bcd986d]{padding:.25em .625em .625em 80px}  .user-info>*[data-v-0bcd986d]{margin:.6em 0}  .user-stat-data[data-v-0bcd986d]  .field .key{color:var(--lfe-color--grey-4)}  .dropdown-operations[data-v-0bcd986d]{margin-top:10px;width:5rem;color:#333;background:#fff;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,.15),inset 0 0 1px rgba(0,0,0,.5);user-select:none}  .dropdown-operations>ul[data-v-0bcd986d]{padding:0;margin:0;max-height:10em;list-style:none;outline:none;font-size:.875rem}  .dropdown-operations>ul li[data-v-0bcd986d]{display:block;padding:.3em 0;cursor:pointer;text-align:center}
+    .dropdown-operations>ul li[data-v-0bcd986d]:hover{background:#eee}</style>
 
-</head>
-
+    <style type="text/css">.lfe-tooltip-theme{display:block !important;z-index:10000}.lfe-tooltip-theme .tooltip-inner{background:#000;color:#fff;border-radius:4px;padding:5px 10px 4px}.lfe-tooltip-theme .tooltip-arrow{width:0;height:0;border-style:solid;position:absolute;margin:5px;border-color:#000;z-index:1}.lfe-tooltip-theme[x-placement^=top]{margin-bottom:5px}.lfe-tooltip-theme[x-placement^=top] .tooltip-arrow{border-width:5px 5px 0 5px;border-left-color:transparent !important;border-right-color:transparent !important;border-bottom-color:transparent !important;bottom:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.lfe-tooltip-theme[x-placement^=bottom]{margin-top:5px}.lfe-tooltip-theme[x-placement^=bottom] .tooltip-arrow{border-width:0 5px 5px 5px;border-left-color:transparent !important;border-right-color:transparent !important;border-top-color:transparent !important;top:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.lfe-tooltip-theme[x-placement^=right]{margin-left:5px}.lfe-tooltip-theme[x-placement^=right] .tooltip-arrow{border-width:5px 5px 5px 0;border-left-color:transparent !important;border-top-color:transparent !important;border-bottom-color:transparent !important;left:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.lfe-tooltip-theme[x-placement^=left]{margin-right:5px}.lfe-tooltip-theme[x-placement^=left] .tooltip-arrow{border-width:5px 0 5px 5px;border-top-color:transparent !important;border-right-color:transparent !important;border-bottom-color:transparent !important;right:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.lfe-tooltip-theme.popover .popover-inner{background:#f9f9f9;color:#000;padding:24px;border-radius:5px;box-shadow:0 5px 30px rgba(0,0,0,.1)}.lfe-tooltip-theme.popover .popover-arrow{border-color:#f9f9f9}.lfe-tooltip-theme[aria-hidden=true]{visibility:hidden;opacity:0;transition:opacity .15s,visibility .15s}.lfe-tooltip-theme[aria-hidden=false]{visibility:visible;opacity:1;transition:opacity .15s}</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">.dropdown[data-v-1f03983a]{--duration: var(--dropdown-transition-duration, .15s);--transitions: opacity var(--duration) ease-out, top var(--duration) ease-out;position:absolute;opacity:0;transition:z-index 0s var(--duration),var(--transitions);pointer-events:none;z-index:-2147483648}.dropdown.shown[data-v-1f03983a]{transition:var(--transitions);pointer-events:unset;z-index:var(--dropdown-z-index, 9)}</style><style type="text/css">.float-card[data-v-0bcd986d]{width:390px;box-shadow:0 0 6px 4px rgba(26,26,26,.1) !important;font-size:1rem;line-height:1.1}.user-header-top[data-v-0bcd986d]{position:relative;height:100px;background-size:cover;background-position:center}.avatar[data-v-0bcd986d]{width:60px;height:60px;border-radius:50%;position:absolute;top:calc(100px - 60px / 2);left:12px}.user-info[data-v-0bcd986d]{padding:.25em .625em .625em 80px}.user-info>*[data-v-0bcd986d]{margin:.6em 0}.user-stat-data[data-v-0bcd986d]  .field .key{color:var(--lfe-color--grey-4)}.dropdown-operations[data-v-0bcd986d]{margin-top:10px;width:5rem;color:#333;background:#fff;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,.15),inset 0 0 1px rgba(0,0,0,.5);user-select:none}.dropdown-operations>ul[data-v-0bcd986d]{padding:0;margin:0;max-height:10em;list-style:none;outline:none;font-size:.875rem}.dropdown-operations>ul li[data-v-0bcd986d]{display:block;padding:.3em 0;cursor:pointer;text-align:center}.dropdown-operations>ul li[data-v-0bcd986d]:hover{background:#eee}</style><style></style></head>
 
 
 <body>
+<div data-v-9af859cc="" id="app" class="lfe-vars">
+    <div data-v-6330a2e0="" data-v-9af859cc="" class="top-progress">
+        <div data-v-6330a2e0="" class="bar done" style="background: rgb(52, 152, 219);">
+        </div>
+    </div>
+    <div data-v-9af859cc="" class="main-container">
+        <div data-v-7958fe72="" data-v-9af859cc="" class="wrapper wrapped lfe-body header-layout normal">
+            <div data-v-7958fe72="" class="background" style="background: linear-gradient(90deg, rgb(35, 37, 38),
+             rgb(65, 67, 69)); filter: blur(0px) brightness(100%);">
 
-<div id="fullscreen-image">
+            </div>
+            <div data-v-2dfcfd35="" data-v-1fbfa3c2="" data-v-9af859cc="" class="header" currentuser="[object Object]" currentdata="[object Object]" currenttime="1697381281" data-v-7958fe72="">
+                <nav data-v-c9185fa2="" data-v-2dfcfd35="" class="lfe-caption bread-crumb">
+                <span data-v-c9185fa2="">
+                    <a data-v-0640126c="" data-v-c9185fa2="" href="https://www.luogu.com.cn/problem/list" colorscheme="default" class="link color-default">某谷</a>
+                    <span data-v-c9185fa2="" class="text"> /
+                <span data-v-c9185fa2="">
+                    <a data-v-0640126c="" data-v-c9185fa2="" href="https://ac.nowcoder.com/acm/problem/22219" colorscheme="default" class="link color-default">题目列表</a>
+                    <span data-v-c9185fa2="" class="text"> /
+                </span>
+                </span>
+                    <span data-v-c9185fa2="">
+                        <span data-v-c9185fa2="" class="text">题目详情</span>
+                        <!----></span>
+            </span></span></nav>
+                <h1 data-v-2dfcfd35="" class="lfe-h1">
+                <span data-v-1fbfa3c2="" data-v-2dfcfd35="" title="P1000 超级玛丽游戏">
+    P1000 超级玛丽游戏
+  </span></h1>
+                <div data-v-2dfcfd35="" class="functional">
+                    <div data-v-2dfcfd35="" class="stat">
+                        <div data-v-3c4577b8="" data-v-1fbfa3c2="" class="stat color-inverse" data-v-2dfcfd35="">
+                            <div data-v-3c4577b8="" class="field">
+                                <span data-v-3c4577b8="" class="key lfe-caption">提交</span>
+                                <span data-v-3c4577b8="" class="value lfe-caption">1.55M</span>
+                            </div>
+                            <div data-v-3c4577b8="" class="field">
+                                <span data-v-3c4577b8="" class="key lfe-caption">通过</span>
+                                <span data-v-3c4577b8="" class="value lfe-caption">393.26k</span>
+                            </div>
+                            <div data-v-3c4577b8="" class="field">
+                                <span data-v-3c4577b8="" class="key lfe-caption">时间限制</span>
+                                <span data-v-3c4577b8="" class="value lfe-caption">1.00s</span>
+                            </div>
+                            <div data-v-3c4577b8="" class="field">
+                                <span data-v-3c4577b8="" class="key lfe-caption">内存限制</span>
+                                <span data-v-3c4577b8="" class="value lfe-caption">128.00MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-2dfcfd35="" class="operation">
+                        <button data-v-7ade990c="" data-v-1fbfa3c2="" type="button" class="lfe-form-sz-middle" data-v-2dfcfd35="" style="border-color: rgb(52, 152, 219); background-color: rgb(52, 152, 219);">
+                            提交答案
+                        </button>
+                        <span data-v-1f03983a="" data-v-1fbfa3c2="" data-v-2dfcfd35="">
+        <span data-v-1f03983a="">
+            <button data-v-cc52fb5c="" data-v-1fbfa3c2="" type="button" class="button-in-anchor lfe-form-sz-middle" data-v-1f03983a="" style="border-color: rgba(255, 255, 255, 0.5); color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">
+        加入题单
+      </button>
+        </span>
 
-    <a href=https://ac.nowcoder.com/acm/problem/22211>牛客题目</a>
+    </span>
+                    </div>
+                </div>
+            </div>
+            <div data-v-1f03983a="" class="dropdown">
+                <div data-v-1fbfa3c2="" data-v-1f03983a="" class="clone-card">
+                    <div data-v-5e80acb2="" data-v-1fbfa3c2="" data-v-1f03983a="">
+                        <input data-v-5e80acb2="" id="radio-1" type="radio" value="bookmark">
+                        <label data-v-5e80acb2="" for="radio-1">
+                            <svg data-v-5e80acb2="" aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fa-input svg-inline--fa fa-circle fa-w-16">
+                                <path data-v-5e80acb2="" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z" class="">
 
-    <form action="https://www.w3school.com.cn/tags/index.asp">
-        输入你的用户名:<p>
-        <input type="text"  autocomplete="off">
-    </p>
+                                </path>
+                            </svg>做题计划（首页）
+                        </label>
+                    </div> <!----> <div data-v-5e80acb2="" data-v-1fbfa3c2="" data-v-1f03983a="">
+                    <input data-v-5e80acb2="" id="radio-2" type="radio" value="user">
+                    <label data-v-5e80acb2="" for="radio-2">
+                        <svg data-v-5e80acb2="" aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fa-input svg-inline--fa fa-circle fa-w-16">
+                            <path data-v-5e80acb2="" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z" class=""></path>
+                        </svg>个人题单</label>
+                </div> <!---->
+                    <div data-v-5e80acb2="" data-v-1fbfa3c2="" data-v-1f03983a="">
+                        <input data-v-5e80acb2="" id="radio-3" type="radio" value="team">
+                        <label data-v-5e80acb2="" for="radio-3">
+                            <svg data-v-5e80acb2="" aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fa-input svg-inline--fa fa-circle fa-w-16"><path data-v-5e80acb2="" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z" class=""></path>
+                            </svg>团队题单</label></div>
+                    <!----> <!---->
+                    <button data-v-7ade990c="" data-v-1fbfa3c2="" type="button" disabled="disabled" class="lfe-form-sz-middle" data-v-1f03983a="" style="border-color: rgb(52, 152, 219); background-color: rgb(52, 152, 219);">
+                        保存
+                        <!----></button>
+                </div>
+            </div>
+        </div>
 
-        <input type="submit" value="Submit">
+        <main data-v-9af859cc="" class="wrapped lfe-body mobile-body" style="background-color: rgb(239, 239, 239);"><div data-v-6febb0e8="" data-v-0cd59e64="" data-v-ea4425c6="" data-v-9af859cc="" class="full-container" currenttemplate="ProblemShow" currenttheme="[object Object]" currenttime="1697381281" style="margin-top: 2em;">
+            <section data-v-0cd59e64="" data-v-6febb0e8="" class="main"><section data-v-ea4425c6="" data-v-6febb0e8=""><!---->
+                <div data-v-f9624136="" data-v-ea4425c6="" class="card problem-card padding-default" data-v-6febb0e8=""><div data-v-ea4425c6="" data-v-f9624136="" class="action"><a data-v-0640126c="" data-v-ea4425c6="" href="https://ac.nowcoder.com/acm/problem/22221" colorscheme="default" class="color-default" data-v-f9624136=""><svg data-v-ea4425c6="" data-v-0640126c="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="markdown" role="img" viewBox="0 0 640 512" class="svg-inline--fa fa-markdown fa-w-20"></svg>
+                    复制Markdown
+                </a> <a data-v-0640126c="" data-v-ea4425c6="" href="javascript:void 0" colorscheme="default" class="hide-side color-default" data-v-f9624136=""><span data-v-ea4425c6="" data-v-0640126c=""><svg data-v-ea4425c6="" data-v-0640126c="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand-wide" role="img" viewBox="0 0 512 512" class="svg-inline--fa fa-expand-wide fa-w-16"></svg>
+            展开
+          </span></a> <textarea data-v-ea4425c6="" data-v-f9624136="" class="copy-input"></textarea></div> <div data-v-16db0c63="" data-v-ea4425c6="" data-v-f9624136=""><h2 data-v-16db0c63="" class="lfe-h2">题目背景</h2> <div data-v-e5ad98f0="" data-v-16db0c63="" class="marked"><p>本题是洛谷的试机题目，可以帮助了解洛谷的使用。</p>
+                    <p>建议完成本题目后继续尝试 <a href="https://ac.nowcoder.com/acm/skill/detail/noip-pj/1276">P1001</a>、<a href="https://ac.nowcoder.com/acm/skill/detail/noip-pj/1289">P1008</a>。</p>
+                    <p>另外强烈推荐<a href="https://ac.nowcoder.com/acm/skill/noip-pj">新用户必读贴</a></p>
+                </div> <h2 data-v-16db0c63="" class="lfe-h2">题目描述</h2> <div data-v-e5ad98f0="" data-v-16db0c63="" class="marked"><p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。</p>
+                    <pre><code data-rendered-lang="clean">                ********
+               ************
+               ####....#.
+             #..###.....##....
+             ###.......######              ###            ###
+                ...........               #...#          #...#
+               ##*#######                 #.#.#          #.#.#
+            ####*******######             #.#.#          #.#.#
+           ...#***.****.*###....          #...#          #...#
+           ....**********##.....           ###            ###
+           ....****    *****....
+             ####        ####
+           ######        ######
+##############################################################
+#...#......#.##...#......#.##...#......#.##------------------#
+###########################################------------------#
+#..#....#....##..#....#....##..#....#....#####################
+##########################################    #----------#
+#.....#......##.....#......##.....#......#    #----------#
+##########################################    #----------#
+#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#
+##########################################    ############
+</code>
+                    </pre>
+                </div> <h2 data-v-16db0c63="" class="lfe-h2">输入格式</h2> <div data-v-e5ad98f0="" data-v-16db0c63="" class="marked"><p>无</p>
+                </div> <h2 data-v-16db0c63="" class="lfe-h2">输出格式</h2> <div data-v-e5ad98f0="" data-v-16db0c63="" class="marked"><p>如描述</p>
+                </div> <!---->
+                    <h2 data-v-16db0c63="" class="lfe-h2">输入输出样例</h2> <p data-v-16db0c63="">无</p> <h2 data-v-16db0c63="" class="lfe-h3">说明/提示</h2> <div data-v-e5ad98f0="" data-v-16db0c63="" class="marked"><p><strong>广告</strong></p>
 
-    </form>
-    <form method="get" action="http://validator.w3.org/check" target="_blank" style="margin-top: 15px;">
-        <p><input name="uri" class="my-button" value="http://www.w3school.com.cn/html/index.asp"></p>
-        <p><input type="submit" value="验证文件" class="my-button"></p>
-    </form>
-
-<p>
-    123
-</p>
-
-    <button type="button"
-            onclick="document.getElementById('demo').innerHTML = Date()"
-            class="my-button"
-    >
-        点击我来显示日期和时间
-    </button>
-
-    <p id="demo" ></p>
-
+                    </div> <!----></div></div></section></section></div></main> </div><html data-v-1f03983a="" class="dropdown"><div data-v-f9624136="" data-v-0bcd986d="" data-v-5b9e5f50="" class="card float-card padding-0" data-v-1f03983a=""><div data-v-0bcd986d="" data-v-f9624136="" class="user-header-top" style="background-image: url();"><img data-v-0bcd986d="" data-v-f9624136="" src="https://cdn.luogu.com.cn/upload/usericon/3.png" alt="洛谷" class="avatar"></div> <div data-v-0bcd986d="" data-v-f9624136="" class="user-info"><div data-v-0bcd986d="" data-v-f9624136="" class="user-name"><a data-v-0640126c="" data-v-0bcd986d="" href="/user/3" target="_blank" colorscheme="none" class="color-none" data-v-f9624136=""><span data-v-0bcd986d="" data-v-0640126c="" style="font-weight: bold; color: rgb(157, 61, 207);">
+  洛谷
+</span></a> <!----> <!----></div> <div data-v-0bcd986d="" data-v-f9624136="" class="lfe-caption slogan">
+    这个家伙很懒，什么也没有不想留下
 </div>
+    <div data-v-0bcd986d="" data-v-f9624136="" class="user-stat-data lfe-caption">
+        <div data-v-bd496524="" data-v-0bcd986d="" class="stats tiled" data-v-f9624136="">
+            <div data-v-bd496524="" class="field">
+                <div data-v-bd496524="">
+                    <span data-v-bd496524="" class="key">关注</span>
+                    <span data-v-bd496524="" class="value">undefined</span>
+                </div>
+            </div>
+            <div data-v-bd496524="" class="field">
+                <div data-v-bd496524="">
+                    <span data-v-bd496524="" class="key">粉丝</span>
+                    <span data-v-bd496524="" class="value">undefined</span>
+                </div></div><div data-v-bd496524="" class="field">
+            <div data-v-bd496524="">
+                <span data-v-bd496524="" class="key">排名</span>
+                <span data-v-bd496524="" class="value">undefined</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div data-v-0bcd986d="" data-v-f9624136="" class="user-action" style="font-size: 0.875em;">
+        <button data-v-7ade990c="" data-v-0bcd986d="" type="button" class="lfe-form-sz-middle" bordercolor="#fff" data-v-f9624136="" style="border-color: rgb(52, 152, 219); background-color: rgb(52, 152, 219);">
+
+        </button>
+        <button data-v-7ade990c="" data-v-0bcd986d="" type="button" class="btn lfe-form-sz-middle" data-v-f9624136="" style="border-color: rgb(52, 152, 219); color: rgb(52, 152, 219); background-color: rgba(52, 152, 219, 0);">私信</button>
+        <!---->
 
 </body>
+</html>
