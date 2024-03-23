@@ -49,7 +49,36 @@
 </head>
 <body>
 <div id="fullscreen-image">
-  <a href="https://ac.nowcoder.com/acm/problem/22211">牛客题目</a>
+ <link style="border-radius: 4px;width:50px; height:50px;">
+  <button type="button" onclick="goToAnotherPage()" target="_blank">牛客题目</button>
+  <button type="button" onclick="goTo1()" target="_blank">洛谷题目</button>
+  <button type="button" onclick="goTo2()" target="_blank">CF</button>
+  <button type="button" onclick="goTo3()" target="_blank">AWing</button>
+  <button type="button" onclick="goTo4()" target="_blank">蓝桥杯真题</button>
+  <button type="button" onclick="goTo5()" target="_blank">BilBil</button>
+  <script>
+    function goToAnotherPage() {
+      // window.location.href = 'https://ac.nowcoder.com/acm/problem/22211'; // 替换为你想要跳转的网页URL 在本页面打开
+      window.open('https://ac.nowcoder.com/discuss/817596?f=b', '_blank'); // 替换为你想要打开的网页URL
+    }
+    function goTo1() {
+      // window.location.href = 'https://ac.nowcoder.com/acm/problem/22211'; // 替换为你想要跳转的网页URL 在本页面打开
+      window.open('https://www.luogu.com.cn/problem/list', '_blank'); // 替换为你想要打开的网页URL
+    }
+    function goTo2() {
+      window.open('https://codeforces.com/?locale=en', '_blank'); // 替换为你想要打开的网页URL
+    }
+    function goTo3() {
+      window.open('https://www.acwing.com/problem/', '_blank'); // 替换为你想要打开的网页URL
+    }
+    function goTo4() {
+      window.open('https://www.dotcpp.com/oj/lanqiao/', '_blank'); // 替换为你想要打开的网页URL
+    }
+    function goTo5() {
+      window.open('https://www.bilibili.com/', '_blank'); // 替换为你想要打开的网页URL
+    }
+  </script>
+  </link>
 
   <form action="https://www.w3school.com.cn/tags/index.asp">
     <p>输入你的用户名:</p>
