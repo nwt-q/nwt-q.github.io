@@ -14,7 +14,6 @@
             font-family: Arial,serif;
             margin: 0;
         }
-
         /* 标题 / LOGO */
         .header {
             padding: 60px;
@@ -63,15 +62,7 @@
             background-color: white;
             padding: 20px;
         }
-
-        /* 伪图像，仅供示例 */
-        .fakeimg {
-            /*background-image: url("https://www.toopic.cn/public/uploads/small/1692244569680169224456993.jpg");*/
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }
-
+        
         /* 页脚 */
         .footer {
             padding: 20px;
@@ -83,6 +74,13 @@
         @media screen and (max-width: 700px) {
             .row, .navbar {
                 flex-direction: column;
+            }
+        }
+        /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
             }
         }
     </style>
@@ -136,6 +134,7 @@
         <p>一些文本..</p>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
+
 </div>
 
 <!-- Footer -->
