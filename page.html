@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> EvLast </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 设置 body 元素的样式 */
+        body {
+            font-family: Arial,serif;
+            margin: 0;
+        }
+
+        /* 标题 / LOGO */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+        /* 设置顶部导航栏样式 */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* 设置导航条链接演示 */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* 更改鼠标悬停时的颜色 */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 列容器 */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* 创建并排的非等列 */
+        /* 侧栏 / 左侧列 */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* 主列 */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* 伪图像，仅供示例 */
+        .fakeimg {
+            /*background-image: url("https://www.toopic.cn/public/uploads/small/1692244569680169224456993.jpg");*/
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 页脚 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* 响应式布局 - 当屏幕小于 700 像素宽时，让两列堆叠而不是并排 */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 注释 -->
+<div style="background:#f4fd3e;padding:5px">
+    <h4 style="text-align:center"> EvLast的博客网站 </h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>我的网站</h1>
+    <p>拥有 <b>弹性</b> 布局。</p>
+</div>
+
+<!-- 导航栏 -->
+<div class="navbar">
+    <a href="https://blog.csdn.net/2303_79299383?spm=1000.2115.3001.5343" target="_blank">主页</a>
+    <a href="https://ac.nowcoder.com/discuss/817596?f=b" target="_blank" >牛客</a>
+    <a href="https://codeforces.com/?locale=en" target="_blank" >CF</a>
+    <a href="https://www.lanqiao.cn/problems/?first_category_id=1" target="_blank">蓝桥杯</a>
+</div>
+
+<!-- 弹性网格（内容） -->
+<div class="row">
+
+    <div class="side">
+        <h2>关于我</h2>
+        <h5>我的照片：</h5>
+        <div> <img src="https://www.toopic.cn/public/uploads/small/1708925732270170892573255.jpg" alt="1" style="height:250px;"></div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h3>更多</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div> <br>
+        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div> <br>
+        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div>
+    </div>
+
+    <div class="main">
+        <h2>标题</h2>
+        <h5>标题描述，2024 年 4 月 1 日</h5>
+        <div> <img src="https://www.toopic.cn/public/uploads/small/1710846286968171084628692.jpg" alt="8" style="height:200px; width: 100%;padding: 20px;"> </div>
+        <p>一些文本..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+        <h2>标题</h2>
+        <h5>标题描述，2024 年 4 月 1 日</h5>
+        <div> <img src="https://www.toopic.cn/public/uploads/small/1711000250814171100025050.jpg" alt="7" style="height:200px; width: 100%;padding: 20px;"> </div>
+        <p>一些文本..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <h2>页脚</h2>
+</div>
+
+</body>
+</html>
