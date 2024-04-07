@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,6 +83,13 @@
                 width: 100%;
             }
         }
+        /*卡片形状的布局*/
+        .card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+
+        }
     </style>
 </head>
 <body>
@@ -95,8 +101,8 @@
 
 <!-- Header -->
 <div class="header">
-    <h1>我的网站</h1>
-    <p>拥有 <b>弹性</b> 布局。</p>
+    <h1>学生管理系统</h1>
+    <p>拥有 <b>简单的</b> 需求分析 </p>
 </div>
 
 <!-- 导航栏 -->
@@ -105,35 +111,225 @@
     <a href="https://ac.nowcoder.com/discuss/817596?f=b" target="_blank" >牛客</a>
     <a href="https://codeforces.com/?locale=en" target="_blank" >CF</a>
     <a href="https://www.lanqiao.cn/problems/?first_category_id=1" target="_blank">蓝桥杯</a>
+    <a herf="https://www.bilibili.com/" target="_blank">BilBil</a>
+
 </div>
 
 <!-- 弹性网格（内容） -->
 <div class="row">
-
     <div class="side">
-        <h2>关于我</h2>
-        <h5>我的照片：</h5>
-        <div> <img src="https://www.toopic.cn/public/uploads/small/1708925732270170892573255.jpg" alt="1" style="height:250px;"></div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3>更多</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div> <br>
-        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div> <br>
-        <div> <img src="https://i.postimg.cc/CxTfLxPR/image-20240401165304223.png" alt="2" style="height:60px; width: 100%; padding: 5px;"> </div>
+        <h1>目录</h1>
+
+        <h2>1. 引言</h2>
+        <ul>
+            <li><h3>1.1 目的</h3></li>
+            <li><h3>1.2 范围</h3></li>
+        </ul>
+
+        <h2>2. 功能性需求</h2>
+        <ul>
+            <li>
+                <h3>2.1 用户认证</h3>
+                <ul>
+                    <li><h4>2.1.1 登录</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.2 学生信息管理</h3>
+                <ul>
+                    <li><h4>2.2.1 学生档案</h4></li>
+                    <li><h4>2.2.2 学籍管理</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.3 课程管理</h3>
+                <ul>
+                    <li><h4>2.3.1 课程信息</h4></li>
+                    <li><h4>2.3.2 选课系统</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.4 成绩管理</h3>
+                <ul>
+                    <li><h4>2.4.1 成绩录入</h4></li>
+                    <li><h4>2.4.2 成绩查询</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.5 课程进度和通知</h3>
+                <ul>
+                    <li><h4>2.5.1 课程日历</h4></li>
+                    <li><h4>2.5.2 通知和提醒</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.6 学生活动管理</h3>
+                <ul>
+                    <li><h4>2.6.1 活动发布</h4></li>
+                    <li><h4>2.6.2 成绩奖励</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.7 考勤管理</h3>
+                <ul>
+                    <li><h4>2.7.1 学生考勤</h4></li>
+                    <li><h4>2.7.2 请假系统</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.8 教师评价系统</h3>
+                <ul>
+                    <li><h4>2.8.1 学生评教</h4></li>
+                    <li><h4>2.8.2 教师互评</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.9 多角色管理</h3>
+                <ul>
+                    <li><h4>2.9.1 学生家长账户</h4></li>
+                    <li><h4>2.9.2 学校管理者权限</h4></li>
+                </ul>
+            </li>
+            <li>
+                <h3>2.10 移动端应用</h3>
+            </li>
+        </ul>
     </div>
 
+
     <div class="main">
-        <h2>标题</h2>
-        <h5>标题描述，2024 年 4 月 1 日</h5>
-        <div> <img src="https://www.toopic.cn/public/uploads/small/1710846286968171084628692.jpg" alt="8" style="height:200px; width: 100%;padding: 20px;"> </div>
-        <p>一些文本..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <br>
-        <h2>标题</h2>
-        <h5>标题描述，2024 年 4 月 1 日</h5>
-        <div> <img src="https://www.toopic.cn/public/uploads/small/1711000250814171100025050.jpg" alt="7" style="height:200px; width: 100%;padding: 20px;"> </div>
-        <p>一些文本..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p> 学生管理系统详细需求文档</p>
+        <h2 >1. 引言</h2>
+        <h3 >1.1 目的</h3>
+        <p>本文档详细定义学生管理系统的功能和性能需求，以满足用户和系统的期望，并提供开发人员详细的指导。</p>
+        <h3 >1.2 范围</h3>
+        <p>学生管理系统将包括学生信息管理、课程管理、成绩管理等模块，旨在全面提升学校的教务管理水平。</p>
+        <h2 >2. 功能性需求</h2>
+        <h3 >2.1 用户认证</h3>
+        <h4 >2.1.1 登录</h4>
+        <ul>
+            <li>用户输入正确的用户名和密码才能成功登录。</li>
+            <li>提供密码重置功能，通过注册邮箱或安全问题进行身份验证。</li>
+
+        </ul>
+        <h3 >2.2 学生信息管理</h3>
+        <h4 >2.2.1 学生档案</h4>
+        <ul>
+            <li>包含紧急联系人信息、健康状况等细节。</li>
+            <li>支持批量导入学生信息。</li>
+
+        </ul>
+        <h4 >2.2.2 学籍管理</h4>
+        <ul>
+            <li>系统记录学生的学业进展、休学、复学等学籍变动情况。</li>
+
+        </ul>
+        <h3 >2.3 课程管理</h3>
+        <h4 >2.3.1 课程信息</h4>
+        <ul>
+            <li>提供高级搜索和过滤功能，便于快速查找特定课程。</li>
+            <li>课程信息包括学分、上课地点、选课要求等。</li>
+
+        </ul>
+        <h4 >2.3.2 选课系统</h4>
+        <ul>
+            <li>设置选课时间窗口，防止冲突和过度选课。</li>
+            <li>学生可以查看已选课程的时间表。</li>
+
+        </ul>
+        <h3 >2.4 成绩管理</h3>
+        <h4 >2.4.1 成绩录入</h4>
+        <ul>
+            <li>教师可以录入平时成绩、考试成绩、课堂表现等各项成绩。</li>
+            <li>支持上传成绩单文件，确保数据准确性。</li>
+
+        </ul>
+        <h4 >2.4.2 成绩查询</h4>
+        <ul>
+            <li>提供图表和报表，直观展示学生成绩分布和趋势。</li>
+            <li>学生可以申请成绩复查，教师能够处理申请。</li>
+
+        </ul>
+        <h3 >2.5 课程进度和通知</h3>
+        <h4 >2.5.1 课程日历</h4>
+        <ul>
+            <li>教师能够发布和更新课程进度表，学生和家长可以随时查看。</li>
+            <li>包含每堂课的主题、作业要求和参考资料。</li>
+
+        </ul>
+        <h4 >2.5.2 通知和提醒</h4>
+        <ul>
+            <li>系统应能够向学生、教师和家长发送通知，包括课程变动、重要事件提醒等。</li>
+            <li>提供多种通知方式，如短信、邮件、系统消息等。</li>
+
+        </ul>
+        <h3 >2.6 学生活动管理</h3>
+        <h4 >2.6.1 活动发布</h4>
+        <ul>
+            <li>学校管理者能够发布学校或班级的活动信息。</li>
+            <li>学生能够查看并报名参与。</li>
+
+        </ul>
+        <h4 >2.6.2 成绩奖励</h4>
+        <ul>
+            <li>设置成绩奖励机制，鼓励学生在学业上的优异表现。</li>
+            <li>系统自动记录并通知相关方。</li>
+
+        </ul>
+        <h3 >2.7 考勤管理</h3>
+        <h4 >2.7.1 学生考勤</h4>
+        <ul>
+            <li>教师能够记录学生每堂课的考勤情况。</li>
+            <li>学生和家长可以查询学生的考勤记录。</li>
+
+        </ul>
+        <h4 >2.7.2 请假系统</h4>
+        <ul>
+            <li>学生能够通过系统提交请假申请。</li>
+            <li>教师能够审批请假请求，并记录学生请假次数。</li>
+
+        </ul>
+        <h3 >2.8 教师评价系统</h3>
+        <h4 >2.8.1 学生评教</h4>
+        <ul>
+            <li>学生能够匿名评价教师的教学质量。</li>
+            <li>提供多维度评价，如教学方法、互动性等。</li>
+
+        </ul>
+        <h4 >2.8.2 教师互评</h4>
+        <ul>
+            <li>教师之间可以互相评价，促进教学团队的共同进步。</li>
+            <li>评价结果供学校管理层参考。</li>
+
+        </ul>
+        <h3 >2.9 多角色管理</h3>
+        <h4 >2.9.1 学生家长账户</h4>
+        <ul>
+            <li>学生家长可以通过单一账户查看多个子女的学习情况。</li>
+            <li>授权家长查看子女成绩、考勤等信息。</li>
+
+        </ul>
+        <h4 >2.9.2 学校管理者权限</h4>
+        <ul>
+            <li>学校管理者拥有全局权限，能够查看学校整体数据和报表。</li>
+            <li>能够配置系统参数和权限。</li>
+
+        </ul>
+        <h3 >2.10 移动端应用</h3>
+        <h4 >2.10.1 移动端支持</h4>
+        <ul>
+            <li>提供跨平台的移动端应用，支持iOS和Android系统。</li>
+            <li>移动端应具备与PC端相似的功能，保持一致的用户体验。</li>
+
+        </ul>
+        <h4 >2.10.2 通知推送</h4>
+        <ul>
+            <li>移动端能够接收到系统的通知推送，及时提醒用户重要信息。</li>
+            <li>用户可以自定义接收通知的方式和频率。</li>
+
+        </ul>
+        <p>这些功能的扩展将为学生管理系统提供更全面、细致的服务，提高学校教务管理的效率和便利性。</p>
+
     </div>
 
 </div>
@@ -146,39 +342,39 @@
 </body>
 </html>
 <script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host + 
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash 
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
-                                    newHref.substring(indexOfQuest + 1);
+    (function() {
+        var ws = new WebSocket('ws://' + window.location.host +
+            '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+            'referrer=' + encodeURIComponent(window.location.pathname));
+        ws.onmessage = function (msg) {
+            if (msg.data === 'reload') {
+                window.location.reload();
+            }
+            if (msg.data.startsWith('update-css ')) {
+                var messageId = msg.data.substring(11);
+                var links = document.getElementsByTagName('link');
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+                    if (link.rel !== 'stylesheet') continue;
+                    var clonedLink = link.cloneNode(true);
+                    var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+                    if (newHref !== link.href) {
+                        clonedLink.href = newHref;
+                    }
+                    else {
+                        var indexOfQuest = newHref.indexOf('?');
+                        if (indexOfQuest >= 0) {
+                            // to support ?foo#hash
+                            clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                newHref.substring(indexOfQuest + 1);
+                        }
+                        else {
+                            clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                        }
+                    }
+                    link.replaceWith(clonedLink);
                 }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
+            }
+        };
+    })();
 </script>
