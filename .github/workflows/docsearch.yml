@@ -21,11 +21,12 @@ jobs:
         with:
           node-version: 20
           cache: pnpm
-      
-      - name: 配置 pnpm 环境
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
+
+      - name: 启用 Corepack
+        run: corepack enable
+
+      - name: 激活 pnpm 8.6.10
+        run: corepack prepare pnpm@8.6.10 --activate
 
       - name: 检测 pnpm 版本
         run: pnpm --version
