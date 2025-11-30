@@ -16,11 +16,15 @@ jobs:
     steps:
       - name: 读取仓库内容
         uses: actions/checkout@v4
-      - name: 设置 Node
-        uses: actions/setup-node@v4
+      
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: pnpm
+          node-version: 20  
+          
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9  
+          run_install: false  
 
       - name: 启用 Corepack
         run: corepack enable
