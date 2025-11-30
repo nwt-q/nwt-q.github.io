@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     # 打包项目
     steps:
-      - name: 读取仓库内容：
-      - uses: actions/checkout@v2
+      - name: 读取仓库内容
+        uses: actions/checkout@v4
       - name: 设置 Node
         uses: actions/setup-node@v4
         with:
@@ -28,17 +28,17 @@ jobs:
           version: 9
 
       - name: 检测 pnpm 版本
-      - run: pnpm --version
+        run: pnpm --version
 
       - name: 下载仓库依赖 & 打包项目：
         run: |
           pnpm install 
-          pnpm build
+          pnpm docs:build
 
       - name: 部署静态页面：
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branches: gh-pages 
+          branch: gh-pages 
           folder: docs/.vitepress/dist
           clean: true
       # 将静态页面部署
