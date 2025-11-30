@@ -12,16 +12,16 @@ jobs:
   npm-build:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    # 打包项目
     steps:
       - name: 读取仓库内容
         uses: actions/checkout@v4
       
-      - name: 设置 Node.js 环境
+      - name: 设置 Node.js 环境（先不启用pnpm缓存）
         uses: actions/setup-node@v4
         with:
           node-version: 20  
-          cache: pnpm  # 现在cache能生效（Corepack会安装pnpm）
+          # 关键：暂时注释cache: pnpm，避免提前检测pnpm
+          # cache: pnpm
 
       - name: 启用 Corepack
         run: corepack enable
@@ -32,24 +32,32 @@ jobs:
       - name: 兜底安装 pnpm（若 Corepack 未生效）
         run: |
           if ! command -v pnpm >/dev/null 2>&1; then
-            npm i -g pnpm
+            npm i -g pnpm@8.6.10
           fi
 
       - name: 检测 pnpm 版本（验证是否安装成功）
         run: pnpm --version  # 输出应为 8.6.10
 
-      - name: 下载仓库依赖 & 打包项目：
+      # 安装完pnpm后，手动配置pnpm缓存（替代setup-node的cache）
+      - name: 配置 pnpm 依赖缓存
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: 下载仓库依赖 & 打包项目
         run: |
           pnpm install 
           pnpm docs:build
 
-      - name: 部署静态页面：
+      - name: 部署静态页面
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages 
           folder: docs/.vitepress/dist
           clean: true
-      # 将静态页面部署
 
 
 
