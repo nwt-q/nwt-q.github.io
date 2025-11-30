@@ -17,23 +17,24 @@ jobs:
       - name: 读取仓库内容
         uses: actions/checkout@v4
       
-      - uses: actions/setup-node@v4
+      - name: 设置 Node.js 环境
+        uses: actions/setup-node@v4
         with:
           node-version: 20  
-          
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9  
-          run_install: false  
+          cache: pnpm  # 现在cache能生效（Corepack会安装pnpm）
 
       - name: 启用 Corepack
         run: corepack enable
 
-      - name: 激活 pnpm 8.6.10
+      - name: 激活并安装指定版本 pnpm 8.6.10
         run: corepack prepare pnpm@8.6.10 --activate
 
-      - name: 检测 pnpm 版本
-        run: pnpm --version
+      - name: 检测 pnpm 版本（验证是否安装成功）
+        run: pnpm --version  # 输出应为 8.6.10
+
+      # 后续可添加安装依赖的步骤
+      - name: 安装项目依赖
+        run: pnpm install --frozen-lockfile  # 锁定lockfile，保证一致性
 
       - name: 下载仓库依赖 & 打包项目：
         run: |
