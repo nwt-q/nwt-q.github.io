@@ -29,12 +29,14 @@ jobs:
       - name: 激活并安装指定版本 pnpm 8.6.10
         run: corepack prepare pnpm@8.6.10 --activate
 
+      - name: 兜底安装 pnpm（若 Corepack 未生效）
+        run: |
+          if ! command -v pnpm >/dev/null 2>&1; then
+            npm i -g pnpm
+          fi
+
       - name: 检测 pnpm 版本（验证是否安装成功）
         run: pnpm --version  # 输出应为 8.6.10
-
-      # 后续可添加安装依赖的步骤
-      - name: 安装项目依赖
-        run: pnpm install --frozen-lockfile  # 锁定lockfile，保证一致性
 
       - name: 下载仓库依赖 & 打包项目：
         run: |
