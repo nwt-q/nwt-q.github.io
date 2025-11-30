@@ -1,9 +1,50 @@
-name: docsearch
+name: 打包项目并部署静态页面
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
+
+jobs:
+  npm-build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    # 打包项目
+    steps:
+      - name: 读取仓库内容：
+      - uses: actions/checkout@v2
+      - name: 设置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      
+      - name: 配置 pnpm 环境
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: 检测 pnpm 版本
+      - run: pnpm --version
+
+      - name: 下载仓库依赖 & 打包项目：
+        run: |
+          pnpm install 
+          pnpm build
+
+      - name: 部署静态页面：
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branches: gh-pages 
+          folder: docs/.vitepress/dist
+          clean: true
+      # 将静态页面部署
+
+
+
 # 更新索引的作用
 # jobs:
 #   algolia:
