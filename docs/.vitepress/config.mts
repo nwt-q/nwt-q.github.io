@@ -411,7 +411,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '微信转码接口文档', link: '/wchat/wxcode' },
-          { text: '微信短链接口文档', link: '/wchat/miniprogram_link' }
+          { text: '微信短链接口文档', link: '/wchat/miniprogramlink' }
         ]
       }
     ],
