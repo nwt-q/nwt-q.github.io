@@ -4,9 +4,99 @@ import { devDependencies } from '../../package.json'
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
+import markdownItKatex from 'markdown-it-katex'
+
 
 import { usePosts } from './theme/untils/permalink';
 const { rewrites } = await usePosts();
+
+const customElements = [
+  'math',
+  'maction',
+  'maligngroup',
+  'malignmark',
+  'menclose',
+  'merror',
+  'mfenced',
+  'mfrac',
+  'mi',
+  'mlongdiv',
+  'mmultiscripts',
+  'mn',
+  'mo',
+  'mover',
+  'mpadded',
+  'mphantom',
+  'mroot',
+  'mrow',
+  'ms',
+  'mscarries',
+  'mscarry',
+  'mscarries',
+  'msgroup',
+  'mstack',
+  'mlongdiv',
+  'msline',
+  'mstack',
+  'mspace',
+  'msqrt',
+  'msrow',
+  'mstack',
+  'mstack',
+  'mstyle',
+  'msub',
+  'msup',
+  'msubsup',
+  'mtable',
+  'mtd',
+  'mtext',
+  'mtr',
+  'munder',
+  'munderover',
+  'semantics',
+  'math',
+  'mi',
+  'mn',
+  'mo',
+  'ms',
+  'mspace',
+  'mtext',
+  'menclose',
+  'merror',
+  'mfenced',
+  'mfrac',
+  'mpadded',
+  'mphantom',
+  'mroot',
+  'mrow',
+  'msqrt',
+  'mstyle',
+  'mmultiscripts',
+  'mover',
+  'mprescripts',
+  'msub',
+  'msubsup',
+  'msup',
+  'munder',
+  'munderover',
+  'none',
+  'maligngroup',
+  'malignmark',
+  'mtable',
+  'mtd',
+  'mtr',
+  'mlongdiv',
+  'mscarries',
+  'mscarry',
+  'msgroup',
+  'msline',
+  'msrow',
+  'mstack',
+  'maction',
+  'semantics',
+  'annotation',
+  'annotation-xml'
+]
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -129,6 +219,7 @@ export default defineConfig({
       md.use(groupIconMdPlugin) //代码组图标
       md.use(markdownItTaskCheckbox) //todo
       md.use(MermaidMarkdown);
+      md.use(markdownItKatex)  //数学公式
 
     }
 
@@ -152,6 +243,13 @@ export default defineConfig({
     ssr: {
       noExternal: ['mermaid'],
     },
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag)
+      }
+    }
   },
 
   lastUpdated: true, //此配置不会立即生效，需git提交后爬取时间戳，没有安装git本地报错可以先注释
@@ -234,12 +332,12 @@ export default defineConfig({
     sidebar: [
       {
         text: '🍉指南',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             //分组标题1
             text: '介绍',
-            collapsed: false,
+            collapsed: true,
             items: [
               { text: '前言', link: '/preface' },
             ],
@@ -247,7 +345,7 @@ export default defineConfig({
           {
             //分组标题2
             text: '基础配置',
-            collapsed: false,
+            collapsed: true,
             items: [
               { text: '快速上手', link: '/getting-started' },
               { text: '配置', link: '/configuration' },
@@ -258,7 +356,7 @@ export default defineConfig({
           {
             //分组标题3
             text: '进阶玩法',
-            collapsed: false,
+            collapsed: true,
             items: [
               { text: 'Markdown', link: '/markdown' },
               { text: '团队', link: '/team' },
@@ -277,7 +375,7 @@ export default defineConfig({
           {
             //分组标题3
             text: '其他站点',
-            collapsed: false,
+            collapsed: true,
             items: [
               { text: 'VuePress', link: 'https://vuepress.yiov.top/' },
               { text: '劝学录教程', link: 'https://yiov.top/' },
@@ -290,8 +388,22 @@ export default defineConfig({
         text: '数学笔记',
         collapsed: false,
         items: [
-          { text: '高等数学', link: '/math/AdvancedMathematics/AdvancedMathematics' },
+          {
+             text: '高等数学', 
+              collapsed: false,
+             items: [
+              { text: '小结', link: '/math/AdvancedMathematics/AdvancedMathematics' },
+               { text: '极限与连续', link: '/math/AdvancedMathematics/Limit' },
+             ]
+          },
           { text: '线性代数', link: '/math/LinearAlgebra/LinearAlgebra' },
+        ]
+      },
+      {
+        text: 'Nginx笔记',
+        collapsed: false,
+        items: [
+          { text: 'Nginx反向代理', link: '/nginx/ReverseProxy' },
         ]
       }
     ],

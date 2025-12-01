@@ -19,9 +19,7 @@ jobs:
       - name: 设置 Node.js 环境（先不启用pnpm缓存）
         uses: actions/setup-node@v4
         with:
-          node-version: 20  
-          # 关键：暂时注释cache: pnpm，避免提前检测pnpm
-          # cache: pnpm
+          node-version: 20
 
       - name: 启用 Corepack
         run: corepack enable
