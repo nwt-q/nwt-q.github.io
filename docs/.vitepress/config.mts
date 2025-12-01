@@ -386,7 +386,7 @@ export default defineConfig({
       },
       {
         text: '数学笔记',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
              text: '高等数学', 
@@ -404,6 +404,13 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Nginx反向代理', link: '/nginx/ReverseProxy' },
+        ]
+      },
+      {
+        text: '微信笔记',
+        collapsed: false,
+        items: [
+          { text: '微信转码接口文档', link: '/wchat/wxcode' },
         ]
       }
     ],
