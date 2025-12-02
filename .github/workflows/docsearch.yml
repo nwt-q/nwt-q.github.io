@@ -64,7 +64,7 @@ jobs:
       - name: Run algolia/docsearch-scraper image
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
+          API_KEY: ${{ secrets.APL_KEY }} 
           CONFIG: ${{ steps.algolia_config.outputs.config }}
 
         run: |
