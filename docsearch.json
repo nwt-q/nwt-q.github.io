@@ -2,121 +2,149 @@
     "index_name": "doc",
     "start_urls": [
         {
-            "url": "https://vitepress.yiov.top/preface.html",
+            "url": "https://notes.jxoj.top/preface.html",
             "selectors_key": "preface",
             "tags": [
                 "preface"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/getting-started.html",
+            "url": "https://notes.jxoj.top/getting-started.html",
             "selectors_key": "getting-started",
             "tags": [
                 "getting-started"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/configuration.html",
+            "url": "https://notes.jxoj.top/configuration.html",
             "selectors_key": "configuration",
             "tags": [
                 "configuration"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/page.html",
+            "url": "https://notes.jxoj.top/page.html",
             "selectors_key": "page",
             "tags": [
                 "page"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/frontmatter.html",
+            "url": "https://notes.jxoj.top/frontmatter.html",
             "selectors_key": "frontmatter",
             "tags": [
                 "frontmatter"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/markdown.html",
+            "url": "https://notes.jxoj.top/markdown.html",
             "selectors_key": "markdown",
             "tags": [
                 "markdown"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/team.html",
+            "url": "https://notes.jxoj.top/team.html",
             "selectors_key": "team",
             "tags": [
                 "team"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/multi-language.html",
+            "url": "https://notes.jxoj.top/multi-language.html",
             "selectors_key": "multi-language",
             "tags": [
                 "multi-language"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/docsearch.html",
+            "url": "https://notes.jxoj.top/docsearch.html",
             "selectors_key": "docsearch",
             "tags": [
                 "docsearch"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/assets.html",
+            "url": "https://notes.jxoj.top/assets.html",
             "selectors_key": "assets",
             "tags": [
                 "assets"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/style.html",
+            "url": "https://notes.jxoj.top/style.html",
             "selectors_key": "style",
             "tags": [
                 "style"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/components.html",
+            "url": "https://notes.jxoj.top/components.html",
             "selectors_key": "components",
             "tags": [
                 "components"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/layout.html",
+            "url": "https://notes.jxoj.top/layout.html",
             "selectors_key": "layout",
             "tags": [
                 "layout"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/plugin.html",
+            "url": "https://notes.jxoj.top/plugin.html",
             "selectors_key": "plugin",
             "tags": [
                 "plugin"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/update.html",
+            "url": "https://notes.jxoj.top/update.html",
             "selectors_key": "update",
             "tags": [
                 "update"
             ]
         },
         {
-            "url": "https://vitepress.yiov.top/nav/",
+            "url": "https://notes.jxoj.top/nav/",
             "selectors_key": "nav",
             "tags": [
                 "nav"
             ]
         },
-        "https://vitepress.yiov.top/"
+        {
+            "url": "https://notes.jxoj.top/wchat/wxcode.html",
+            "selectors_key": "wchat",
+            "tags": [
+                "wchat"
+            ]
+        },
+        {
+            "url": "https://notes.jxoj.top/wchat/miniprogramlink.html",
+            "selectors_key": "wchatapi",
+            "tags": [
+                "wchatapi"
+            ]
+        },
+        {
+            "url": "https://notes.jxoj.top/math/AdvancedMathematics/Limit.html",
+            "selectors_key": "math",
+            "tags": [
+                "math"
+            ]
+        },
+         {
+            "url": "https://notes.jxoj.top/nginx/ReverseProxy.html",
+            "selectors_key": "nginx",
+            "tags": [
+                "nginx"
+            ]
+        },
+        "https://notes.jxoj.top/"
     ],
     "stop_urls": [
-        "https://vitepress.yiov.top/nav/mao.html"
+        "https://notes.jxoj.top/nav/mao.html"
     ],
     "selectors": {
         "preface": {
@@ -393,6 +421,78 @@
             "lvl0": {
                 "selector": "",
                 "default_value": "搭建导航"
+            },
+            "lvl1": ".content h1",
+            "lvl2": ".content h2",
+            "lvl3": ".content h3",
+            "lvl4": ".content h4",
+            "lvl5": ".content h5",
+            "lvl6": ".content h6",
+            "text": ".content p, .content li",
+            "lang": {
+                "selector": "/html/@lang",
+                "type": "xpath",
+                "global": true
+            }
+        },
+        "wchat": {
+            "lvl0": {
+                "selector": "",
+                "default_value": "微信葵花码"
+            },
+            "lvl1": ".content h1",
+            "lvl2": ".content h2",
+            "lvl3": ".content h3",
+            "lvl4": ".content h4",
+            "lvl5": ".content h5",
+            "lvl6": ".content h6",
+            "text": ".content p, .content li",
+            "lang": {
+                "selector": "/html/@lang",
+                "type": "xpath",
+                "global": true
+            }
+        },
+        "wchatapi": {
+            "lvl0": {
+                "selector": "",
+                "default_value": "微信短链接口"
+            },
+            "lvl1": ".content h1",
+            "lvl2": ".content h2",
+            "lvl3": ".content h3",
+            "lvl4": ".content h4",
+            "lvl5": ".content h5",
+            "lvl6": ".content h6",
+            "text": ".content p, .content li",
+            "lang": {
+                "selector": "/html/@lang",
+                "type": "xpath",
+                "global": true
+            }
+        },
+        "math": {
+            "lvl0": {
+                "selector": "",
+                "default_value": "数学笔记"
+            },
+            "lvl1": ".content h1",
+            "lvl2": ".content h2",
+            "lvl3": ".content h3",
+            "lvl4": ".content h4",
+            "lvl5": ".content h5",
+            "lvl6": ".content h6",
+            "text": ".content p, .content li",
+            "lang": {
+                "selector": "/html/@lang",
+                "type": "xpath",
+                "global": true
+            }
+        },
+         "nginx": {
+            "lvl0": {
+                "selector": "",
+                "default_value": "Nginx笔记"
             },
             "lvl1": ".content h1",
             "lvl2": ".content h2",

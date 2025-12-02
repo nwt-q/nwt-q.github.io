@@ -27,7 +27,7 @@
 
 **请求体示例 (JSON):**
 
-```
+```json
 {
     "appid": "wx6b698b0251caccff",
     "pagepath": "pages/index/index"
@@ -45,7 +45,7 @@
 
 **成功响应示例:**
 
-```
+```json
 {
     "code": 200,
     "msg": "小程序短链生成成功，费用已扣除",
@@ -68,7 +68,7 @@
 
 **请求体示例 (JSON):**
 
-```
+```json
 {
     "link": "mp://ilhyu3rfOgfbCYy"
 }
@@ -86,7 +86,7 @@
 
 **成功响应示例:**
 
-```
+```json
 {
     "code": 200,
     "msg": "短链解码成功，费用已扣除",
@@ -110,7 +110,7 @@
 
 **请求体示例 (JSON):**
 
-```
+```json
 {
     "longUrl": "[https://www.google.com/search?q=gemini](https://www.google.com/search?q=gemini)"
 }
@@ -127,7 +127,7 @@
 
 **成功响应示例:**
 
-```
+```json
 {
     "code": 200,
     "msg": "短链生成成功，费用已扣除",
