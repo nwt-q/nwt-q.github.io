@@ -66,11 +66,10 @@ jobs:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.algolia_config.outputs.config }}
+
         run: |
           echo "APP_ID length: ${#APPLICATION_ID}"
           echo "API_KEY length: ${#API_KEY}"
-
-        run: |
           docker run \
             --env APPLICATION_ID=${APPLICATION_ID} \
             --env API_KEY=${API_KEY} \
