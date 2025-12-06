@@ -65,12 +65,14 @@ export default {
        }
     }
 
+
     // 彩虹背景动画样式
     if (typeof window !== 'undefined') {
       watch(
         () => router.route.data.relativePath,
         () => updateHomePageStyle(location.pathname === '/'),
         { immediate: true },
+        
       )
     }
 
@@ -108,18 +110,19 @@ export default {
     });
     watch(
       () => route.path,
-      () => nextTick(() => initZoom())
+      () => nextTick(() => initZoom()),
     );
 
     // giscus
     const { frontmatter } = useData();
 
+
     // giscus配置
     giscusTalk({
-      repo: 'Yiov/vitepress-doc', //仓库
-      repoId: 'R_kgDOGYFl1A', //仓库ID
+      repo: 'nwt-q/nwt-q.github.io', //仓库
+      repoId: 'R_kgDOKap8kQ', //仓库ID
       category: 'General', // 讨论分类
-      categoryId: 'DIC_kwDOGYFl1M4CayLN', //讨论分类ID
+      categoryId: 'DIC_kwDOKap8kc4CzeHS', //讨论分类ID
       mapping: 'pathname',
       inputPosition: 'bottom',
       lang: 'zh-CN',

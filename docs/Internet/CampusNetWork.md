@@ -17,6 +17,11 @@ curl 'http://192.168.0.101/drcom/login?callback=dr1003&DDDDD=[你的手机号码
   -H 'Referer: http://192.168.0.101/a79.htm' \
   -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0' \
   --insecure ;
+```
+
+第二段请求
+
+```bash
 curl 'http://192.168.0.101:801/eportal/extern/oB3cDT1672886672/OZxMCH1672886693/pc_3.js?v=_1672904711582' \
   -H 'Accept: */*' \
   -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6' \

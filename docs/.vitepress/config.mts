@@ -105,8 +105,38 @@ export default defineConfig({
   rewrites,
 
   // #region fav
-  head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    head: [
+      ['link', { rel: 'icon', href: '/logo.png' }],
+    // --- Google Analytics GA4 ---
+    // [
+    //   'script',
+    //   { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX' }
+    // ],
+    // [
+    //   'script',
+    //   {},
+    //   `
+    //   window.dataLayer = window.dataLayer || [];
+    //   function gtag(){dataLayer.push(arguments);}
+    //   gtag('js', new Date());
+    //   gtag('config', 'G-XXXXXXX');
+    //   `
+    // ],
+
+    // // --- Baidu Tongji ---
+    // [
+    //   'script',
+    //   {},
+    //   `
+    //   var _hmt = _hmt || [];
+    //   (function() {
+    //     var hm = document.createElement("script");
+    //     hm.src = "https://hm.baidu.com/hm.js?YOUR_BAIDU_TRACKING_ID";
+    //     var s = document.getElementsByTagName("script")[0]; 
+    //     s.parentNode.insertBefore(hm, s);
+    //   })();
+    //   `
+    // ]
   ],
   // #endregion fav
 
@@ -220,7 +250,7 @@ export default defineConfig({
       md.use(markdownItTaskCheckbox) //todo
       md.use(MermaidMarkdown);
       md.use(markdownItKatex)  //数学公式
-
+      
     }
 
   },
@@ -266,7 +296,7 @@ export default defineConfig({
 
     //编辑本页
     editLink: {
-      pattern: 'https://github.com/Yiov/vitepress-doc/edit/main/docs/:path', // 改成自己的仓库
+      pattern: 'https://github.com/nwt-q/nwt-q.github.io/tree/main/docs/:path', // 改成自己的仓库
       text: '在GitHub编辑本页'
     },
 
@@ -323,7 +353,6 @@ export default defineConfig({
           },
         ],
       },
-      { text: `VitePress ${devDependencies.vitepress.replace('^', '')}`, link: 'https://vitepress.dev/zh/', noIcon: true },
       { text: '更新日志', link: '/changelog' },
     ],
 
@@ -413,7 +442,29 @@ export default defineConfig({
           { text: '微信转码接口文档', link: '/wchat/wxcode' },
           { text: '微信短链接口文档', link: '/wchat/miniprogramlink' }
         ]
-      }
+      },
+      {
+        text: 'Java报错解决方案',
+        collapsed: false,
+        items: [
+          { text: 'Java读取配置文件中的信息', link: '/java/configuration' },
+          { text: 'Java中发送对应的Http请求', link: '/java/HttpClient' }
+         ]
+      },
+      {
+        text: '计算机网络解决方案',
+        collapsed: false,
+        items: [
+          { text: 'Linux如何登录认证网络', link: 'Internet/CampusNetWork' },
+         ]
+      },
+      // {
+      //   text: '论文笔记',
+      //   collapsed: false,
+      //   items: [
+      //     // { text: 'Linux如何登录认证网络', link: 'Internet/CampusNetWork' },
+      //    ]
+      // }
     ],
 
 
