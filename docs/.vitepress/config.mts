@@ -467,7 +467,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '内网仓库间的互相拷贝', link: 'Git/GitForLocal' },
-              { text: '代码提交规范组件', link: 'Git/git-cz' },
+              { text: '代码提交规范组件', link: 'Git/gitcz.md' },
             ]
           },
           {
