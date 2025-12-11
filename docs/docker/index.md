@@ -246,6 +246,6 @@ Docker-cli 会解析我们输入的 cmd 命令，然后调用 Docker daemon 守�
 
 
 
-参考文章： [Docker 是什么？ 和 k8s 之间是什么关系？](assets/_ldWjMNgyAsglGexSbsqEw)
+参考文章： [Docker 是什么？ 和 k8s 之间是什么关系？](https://mp.weixin.qq.com/s/_ldWjMNgyAsglGexSbsqEw)
 
 [一文彻底搞懂大模型 - RAG（检索、增强、生成）-CSDN博客](https://blog.csdn.net/a2875254060/article/details/142468037)

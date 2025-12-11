@@ -429,7 +429,7 @@ export default defineConfig({
           { text: '线性代数', link: '/math/LinearAlgebra/LinearAlgebra' },
         ]
       },
-            {
+      {
         text: '组件',
         collapsed: false,
         items: [
@@ -437,37 +437,37 @@ export default defineConfig({
             text: 'Redis笔记',
             collapsed: true,
             items: [
-              { text: '主从模式原理与实操', link: 'Redis/MasterSlave' },
+              { text: '主从模式原理与实操', link: '/Redis/MasterSlave' },
             ]
           },
           {
             text: 'RabbitMQ笔记',
             collapsed: true,
             items: [
-              { text: 'RabitMQ的安装', link: 'RabbitMQ/index' },
+              { text: 'RabitMQ的安装', link: '/RabbitMQ/index' },
             ]
           },
           {
             text: 'PostgreSQL笔记',
             collapsed: true,
             items: [
-              { text: 'PostgreSQL介绍', link: 'PostgreSQL/index' },
+              { text: 'PostgreSQL介绍', link: '/PostgreSQL/index' },
             ]
           },
           {
             text: 'Docker笔记',
             collapsed: true,
             items: [
-              { text: 'docker的安装与使用', link: 'docker/index' },
-              { text: 'Docker数据卷访问失败', link: 'docker/FindVolumes' },
+              { text: 'docker的安装与使用', link: '/docker/index' },
+              { text: 'Docker数据卷访问失败', link: '/docker/FindVolumes' },
             ]
           },
           {
             text: 'Git笔记',
             collapsed: true,
             items: [
-              { text: '内网仓库间的互相拷贝', link: 'Git/GitForLocal' },
-              { text: '代码提交规范组件', link: 'Git/gitcz.md' },
+              { text: '内网仓库间的互相拷贝', link: '/Git/GitForLocal' },
+              { text: '代码提交规范组件', link: '/Git/gitcz.md' },
             ]
           },
           {
@@ -493,28 +493,28 @@ export default defineConfig({
         items: [
           { text: 'Java读取配置文件中的信息', link: '/Java/configuration' },
           { text: 'Java中发送对应的Http请求', link: '/Java/HttpClient' },
-         
+          { text: 'Jankins', link: '/Java/JenKins' },
          ]
       },
       {
         text: '计算机网络解决方案',
         collapsed: false,
         items: [
-          { text: 'Linux如何登录认证网络', link: 'Internet/CampusNetWork' },
+          { text: 'Linux如何登录认证网络', link: '/Internet/CampusNetWork' },
          ]
       },
       {
         text: '论文笔记',
         collapsed: false,
         items: [
-          { text: '论文写作常见格式', link: 'thesis/index' },
+          { text: '论文写作常见格式', link: '/thesis/index' },
          ]
       },
      {
         text: 'Linux笔记',
         collapsed: false,
         items: [
-          { text: 'wsl本地子系统', link: 'Linux/wsluse' },
+          { text: 'wsl本地子系统', link: '/Linux/wsluse' },
          ]
       },
     ],
