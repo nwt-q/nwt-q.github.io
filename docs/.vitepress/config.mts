@@ -423,16 +423,59 @@ export default defineConfig({
              items: [
               { text: '小结', link: '/math/AdvancedMathematics/AdvancedMathematics' },
                { text: '极限与连续', link: '/math/AdvancedMathematics/Limit' },
+               { text: '导数', link: '/math/AdvancedMathematics/Derivatives' },
              ]
           },
           { text: '线性代数', link: '/math/LinearAlgebra/LinearAlgebra' },
         ]
       },
-      {
-        text: 'Nginx笔记',
+            {
+        text: '组件',
         collapsed: false,
         items: [
-          { text: 'Nginx反向代理', link: '/nginx/ReverseProxy' },
+          {
+            text: 'Redis笔记',
+            collapsed: true,
+            items: [
+              { text: '主从模式原理与实操', link: 'Redis/MasterSlave' },
+            ]
+          },
+          {
+            text: 'RabbitMQ笔记',
+            collapsed: true,
+            items: [
+              { text: 'RabitMQ的安装', link: 'RabbitMQ/index' },
+            ]
+          },
+          {
+            text: 'PostgreSQL笔记',
+            collapsed: true,
+            items: [
+              { text: 'PostgreSQL介绍', link: 'PostgreSQL/index' },
+            ]
+          },
+          {
+            text: 'Docker笔记',
+            collapsed: true,
+            items: [
+              { text: 'docker的安装与使用', link: 'docker/index' },
+              { text: 'Docker数据卷访问失败', link: 'docker/FindVolumes' },
+            ]
+          },
+          {
+            text: 'Git笔记',
+            collapsed: true,
+            items: [
+              { text: '内网仓库间的互相拷贝', link: 'Git/GitForLocal' },
+            ]
+          },
+          {
+            text: 'Nginx笔记',
+            collapsed: true,
+            items: [
+              { text: 'Nginx反向代理', link: '/nginx/ReverseProxy' },
+            ]
+          },
         ]
       },
       {
@@ -447,8 +490,9 @@ export default defineConfig({
         text: 'Java报错解决方案',
         collapsed: false,
         items: [
-          { text: 'Java读取配置文件中的信息', link: '/java/configuration' },
-          { text: 'Java中发送对应的Http请求', link: '/java/HttpClient' }
+          { text: 'Java读取配置文件中的信息', link: '/Java/configuration' },
+          { text: 'Java中发送对应的Http请求', link: '/Java/HttpClient' },
+         
          ]
       },
       {
@@ -458,13 +502,20 @@ export default defineConfig({
           { text: 'Linux如何登录认证网络', link: 'Internet/CampusNetWork' },
          ]
       },
-      // {
-      //   text: '论文笔记',
-      //   collapsed: false,
-      //   items: [
-      //     // { text: 'Linux如何登录认证网络', link: 'Internet/CampusNetWork' },
-      //    ]
-      // }
+      {
+        text: '论文笔记',
+        collapsed: false,
+        items: [
+          { text: '论文写作常见格式', link: 'thesis/index' },
+         ]
+      },
+     {
+        text: 'Linux笔记',
+        collapsed: false,
+        items: [
+          { text: 'wsl本地子系统', link: 'Linux/wsluse' },
+         ]
+      },
     ],
 
 
