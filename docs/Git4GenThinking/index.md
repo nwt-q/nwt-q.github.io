@@ -63,14 +63,20 @@ https://m.datawhale.cn/activity/461
 - **模型源 (发动机)**: [ModelScope (魔搭社区)](https://modelscope.cn/) - Qwen2.5 / DeepSeek
 - **连接协议 (机械臂)**: [MCP (Model Context Protocol)](https://modelcontextprotocol.io/)
 
-如果是零基础的可以看 [CherryStudio搭建本地AI知识库，三大痛点与进阶方案。_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1NMoFYoEsb/) 这个视频了解 **Cherry Studio** 
+如果是零基础的可以看 [CherryStudio搭建本地AI知识库](https://www.bilibili.com/video/BV1NMoFYoEsb/) 这个视频了解 **Cherry Studio** 
 
 <iframe  style="width:100%; aspect-ratio:16/9; margin-top: 2em;"  src="//player.bilibili.com/player.html?bvid=BV1NMoFYoEsb&autoplay=0&loop=0"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen> </iframe>
 
-对MCP不了解的可以看这个视频了解 [MCP是啥？技术原理是什么？一个视频搞懂MCP的一切。Windows系统配置MCP，Cursor Cline使用MCP_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1AnQNYxEsy?vd_source=f02990bf5222d371585fba0726513017&spm_id_from=333.788.videopod.sections)
+对MCP不了解的可以看这个视频了解 [MCP是啥？技术原理是什么？一个视频搞懂MCP的一切。](https://www.bilibili.com/video/BV1AnQNYxEsy?vd_source=f02990bf5222d371585fba0726513017&spm_id_from=333.788.videopod.sections)
 
 
 <iframe  style="width:100%; aspect-ratio:16/9; margin-top: 2em;"  src="//player.bilibili.com/player.html?bvid=BV1AnQNYxEsy&autoplay=0&loop=0"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen> </iframe>
+
+
+
+最后今天任务的操作指南 [使用魔搭社区的API key使用大模型_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1kTGvzUEq5/)
+
+<iframe  style="width:100%; aspect-ratio:16/9; margin-top: 2em;"  src="//player.bilibili.com/player.html?bvid=BV1kTGvzUEq5&autoplay=0&loop=0"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen> </iframe>
 
 详细提交作业方式参考： [通过生成式思维构建MCP智能体 - Datawhale](https://www.datawhale.cn/activity/461/learn/267/5906)
 

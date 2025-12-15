@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /math/AdvancedMathematics/AdvancedMathematics
+      link: /Git4GenThinking/index
     - theme: alt
       text: GitHub
       link: https://github.com/Yiov/vitepress-doc

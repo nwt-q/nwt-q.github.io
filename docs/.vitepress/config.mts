@@ -414,6 +414,13 @@ export default defineConfig({
         ]
       },
       {
+          text: 'GenThinking 笔记',
+          collapsed: true,
+          items: [
+            { text: '快速开始', link: '/Git4GenThinking/index' },
+          ]
+      },
+      {
         text: '数学笔记',
         collapsed: true,
         items: [
