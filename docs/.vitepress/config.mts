@@ -249,10 +249,15 @@ export default defineConfig({
       md.use(groupIconMdPlugin) //代码组图标
       md.use(markdownItTaskCheckbox) //todo
       md.use(MermaidMarkdown);
-      md.use(markdownItKatex)  //数学公式
-      
+      md.use(markdownItKatex);
+        // md.use(markdownItKatex, {
+        //   throwOnError: false,
+        //   output: 'html',  // 关键：只输出HTML，不输出MathML
+        //   strict: false,
+        //   displayMode: false,
+        //   // 其他选项...
+        // })
     }
-
   },
 
   vite: {
@@ -508,6 +513,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Linux如何登录认证网络', link: '/Internet/CampusNetWork' },
+          
          ]
       },
       {
@@ -522,12 +528,10 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'wsl本地子系统', link: '/Linux/wsluse' },
+          { text: 'Linux文件储存系统', link: '/Linux/fdisk' },
          ]
       },
     ],
-
-
-
     //Algolia搜索
     search: {
       provider: 'algolia',

@@ -12,3 +12,5 @@
 @import './hidden.css';
 @import './task-list.css';
 @import './sidebarIcon.css';
+
+.katex .katex-html { display: none !important; }
