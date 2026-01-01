@@ -229,7 +229,7 @@ export default defineConfig({
 
           // 获取原始的 fence 渲染规则
           const defaultFence = md.renderer.rules.fence?.bind(md.renderer.rules) ?? ((...args) => args[0][args[1]].content);
-
+          
           // 重写 fence 渲染规则
           md.renderer.rules.fence = (tokens, idx, options, env, self) => {
             const token = tokens[idx];
