@@ -250,13 +250,6 @@ export default defineConfig({
       md.use(markdownItTaskCheckbox) //todo
       md.use(MermaidMarkdown);
       md.use(markdownItKatex);
-        // md.use(markdownItKatex, {
-        //   throwOnError: false,
-        //   output: 'html',  // 关键：只输出HTML，不输出MathML
-        //   strict: false,
-        //   displayMode: false,
-        //   // 其他选项...
-        // })
     }
   },
 
@@ -364,6 +357,7 @@ export default defineConfig({
 
     //侧边栏
     sidebar: [
+      // 指南
       {
         text: '🍉指南',
         collapsed: true,
@@ -418,6 +412,7 @@ export default defineConfig({
           },
         ]
       },
+      // GenThinking 笔记
       {
           text: 'GenThinking 笔记',
           collapsed: true,
@@ -425,6 +420,7 @@ export default defineConfig({
             { text: '快速开始', link: '/Git4GenThinking/index' },
           ]
       },
+      // 数学笔记
       {
         text: '数学笔记',
         collapsed: true,
@@ -441,6 +437,7 @@ export default defineConfig({
           { text: '线性代数', link: '/math/LinearAlgebra/LinearAlgebra' },
         ]
       },
+      // 组件
       {
         text: '组件',
         collapsed: false,
@@ -491,6 +488,7 @@ export default defineConfig({
           },
         ]
       },
+      // 微信笔记
       {
         text: '微信笔记',
         collapsed: false,
@@ -499,6 +497,7 @@ export default defineConfig({
           { text: '微信短链接口文档', link: '/wchat/miniprogramlink' }
         ]
       },
+      // Java笔记
       {
         text: 'Java报错解决方案',
         collapsed: false,
@@ -508,6 +507,7 @@ export default defineConfig({
           { text: 'Jankins', link: '/Java/JenKins' },
          ]
       },
+      // 计算机网络笔记
       {
         text: '计算机网络解决方案',
         collapsed: false,
@@ -516,6 +516,7 @@ export default defineConfig({
           
          ]
       },
+      // 论文笔记
       {
         text: '论文笔记',
         collapsed: false,
@@ -523,12 +524,30 @@ export default defineConfig({
           { text: '论文写作常见格式', link: '/thesis/index' },
          ]
       },
-     {
+      // Linux 笔记
+      {
         text: 'Linux笔记',
         collapsed: false,
         items: [
           { text: 'wsl本地子系统', link: '/Linux/wsluse' },
           { text: 'Linux文件储存系统', link: '/Linux/fdisk' },
+         ]
+      },
+      // blander
+      {
+        text: 'Blander笔记',
+        collapsed: false,
+        items: [
+          { text: 'blander使用指南', link: '/blander/index' }
+         ]
+      },
+      // 计算机组成原理笔记
+      {
+        text: '计算机组成原理笔记',
+        collapsed: false,
+        items: [
+          { text: '计算机组成原理概述', link: '/coa/index' },
+          { text: '进制概述', link: '/coa/NumeralSystem' }
          ]
       },
     ],
@@ -589,7 +608,7 @@ export default defineConfig({
 
     //社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Yiov/vitepress-doc' },
+      { icon: 'github', link: 'https://github.com/nwt-q/nwt-q.github.io' },
       { icon: 'twitter', link: 'https://twitter.com/' },
       { icon: 'discord', link: 'https://chat.vitejs.dev/' },
       {
