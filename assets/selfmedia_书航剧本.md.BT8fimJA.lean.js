@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.DMZhn_gK.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"selfmedia/书航剧本.md","filePath":"selfmedia/书航剧本.md","lastUpdated":1773060322000}'),s={name:"selfmedia/书航剧本.md"};function r(o,c,d,n,_,i){return a(),t("div")}const f=e(s,[["render",r]]);export{p as __pageData,f as default};
