@@ -1,0 +1,23 @@
+---
+title: 重击 React 无法访问
+tags: [React,前端]
+categories: [React]
+date: 2025-12-10
+description: 重击 React 无法访问
+articleGPT: 重击 React 无法访问
+references:
+  - title: docker
+    url: https://github.com/imsyy/vitepress-theme-curve
+---
+
+# 重击 React 无法访问
+
+react项目运行却始终无法访问，一开始是以为配置问题，反复修改，经过我思考和对于网络的理解，发现原来是我一个插件在作祟
+
+![image-20251215144028685](assets/image-20251215144028685.png)
+
+没错正如大家所料分流工具，将localhost走代码并未代理到本地服务器而是远端服务器导致访问失败
+
+![image-20251215144219313](assets/image-20251215144219313.png)
+
+经过更改配置后react正确访问![image-20251215144414587](assets/image-20251215144414587.png)
