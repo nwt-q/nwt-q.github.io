@@ -32,6 +32,15 @@ export default withPwa(
     lastUpdated: true,
     // 主题
     appearance: "dark",
+    // 显示封面设置
+    cover: {
+      showCover: {
+        enable: false, // 改为 false 关闭所有文章封面图
+        coverLayout: "left", // 布局类型（关闭后不生效）
+        defaultCover: [], // 清空默认封面图（可选）
+      },
+      twoColumns: false, // 网格布局（关闭后不生效）
+    },
     // Head
     head: themeConfig.inject.header,
     // sitemap
