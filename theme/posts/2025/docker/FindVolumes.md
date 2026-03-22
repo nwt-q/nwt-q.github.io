@@ -14,7 +14,9 @@ references:
 
 在日常开发中出现数据卷访问不到的情况
 
-![image-20251209153907335](assets/image-20251209153907335.png)
+![image-20251209153907335](./assets/image-20251209153907335.png)
+
+
 
 显示了数据卷的挂载位置但是无法进行访问
 
@@ -39,11 +41,13 @@ Docker Root Dir: /data/docker  # 这是真实路径，不是/var/lib/docker！
 
 ### 第二步：验证 pgdata 卷的真实存储位置
 用第一步找到的「Docker Root Dir」替换 `/var/lib/docker`，执行：
+
 ```bash
 # 假设Docker Root Dir是/data/docker，执行：
 ls -ld /data/docker/volumes/pgdata/
 ls -ld /data/docker/volumes/pgdata/_data
 ```
+
 此时你会发现：  
 ✅ `pgdata` 目录和 `_data` 子目录都存在（因为容器已运行，卷被实际挂载）；  
 ✅ 进入该目录能看到 PostgreSQL 的数据文件（比如 `18/main` 目录，对应新版 PostgreSQL 镜像的存储结构）。

@@ -37,7 +37,7 @@ references:
 
 如图所示 SwitchA和SwitchB通过以太链路分别都连接VLAN10和VLAN20的网 络，且SwitchA和SwitchB之间有较大的数据流量。 用户希望SwitchA和SwitchB之间能够提供较大的链路带宽来使相同VLAN间互相通信。 同时用户也希望能够提供一定的冗余度，保证数据传输和链路的可靠性。
 
-![image-20251210113724771](assets/image-20251210113724771.png)
+![image-20251210113724771](./assets/image-20251210113724771.png)
 
 
 

@@ -541,6 +541,14 @@ export default defineConfig({
           { text: 'blander使用指南', link: '/blander/index' }
          ]
       },
+      //大模型训练笔记
+      {
+        text: '大模型训练笔记',
+        collapsed: false,
+        items: [
+          { text: '模型压缩', link: '/ModelTraning/ModelAER' }
+         ]
+      },
       // 计算机组成原理笔记
       {
         text: '计算机组成原理笔记',
