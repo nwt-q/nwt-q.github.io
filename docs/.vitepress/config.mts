@@ -453,7 +453,7 @@ export default defineConfig({
             text: 'Kubernetes笔记',
             collapsed: true,
             items: [
-              { text: 'Kubernetes基础概念', link: '/kubernetes/index' },
+              { text: 'Kubernetes基础概念', link: '/kubernetes/k8s' },
             ]
           },
           {
