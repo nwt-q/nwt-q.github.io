@@ -449,6 +449,13 @@ export default defineConfig({
               { text: '主从模式原理与实操', link: '/Redis/MasterSlave' },
             ]
           },
+           {
+            text: 'Kubernetes笔记',
+            collapsed: true,
+            items: [
+              { text: 'Kubernetes基础概念', link: '/Kubernetes/index' },
+            ]
+          },
           {
             text: 'RabbitMQ笔记',
             collapsed: true,

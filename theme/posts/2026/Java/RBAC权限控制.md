@@ -16,11 +16,19 @@ references:
 
 权限控制最基础的便是拦截器，除去拦截器是第一层权限控制功能，
 
-```json
-curl -X POST http://113.45.71.73:48920/generate-qr -H "Authorization: Bearer SECRET_TEST_TOKEN_12345"  -H "Content-Type: application/json"  -d '{
-      "appid": "wxafec6f8422cb357b",
-      "pagepath":"pluginMarketing/receive/index/index.html?activityId=1241809587196973056",
-      "type": "wxcode"
-  }'
-```
+BCrypt 工具类对密码进行加密和验证
 
+
+
+
+
+
+
+## 数据权限控制
+
+1. .@DataScope实现数据权限控制
+
+2. ${params.datasScope}实现数据范围过滤
+2. 要求:
+实体类需要继承BaseEntity
+业务表需要有dept_id和user_id这二个字段
