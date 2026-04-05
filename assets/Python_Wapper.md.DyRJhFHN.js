@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.DMZhn_gK.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Python/Wapper.md","filePath":"Python/Wapper.md","lastUpdated":1774189548000}'),r={name:"Python/Wapper.md"};function o(p,n,s,c,d,_){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
