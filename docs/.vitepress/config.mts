@@ -483,7 +483,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '内网仓库间的互相拷贝', link: '/Git/GitForLocal' },
-              { text: '代码提交规范组件', link: '/Git/gitcz.md' },
+              { text: '代码提交规范组件', link: '/Git/gitcz' },
             ]
           },
           {
@@ -511,7 +511,7 @@ export default defineConfig({
         items: [
           { text: 'Java读取配置文件中的信息', link: '/Java/configuration' },
           { text: 'Java中发送对应的Http请求', link: '/Java/HttpClient' },
-          { text: 'Jankins', link: '/Java/JenKins' },
+          { text: 'Jenkins', link: '/Java/Jenkins' },
          ]
       },
       // 计算机网络笔记
