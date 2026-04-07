@@ -1,5 +1,5 @@
 ---
-title:懒汉式与俄汉式
+title: 懒汉式与俄汉式
 tags: [Java,懒汉式与俄汉式]
 categories: [Java]
 date: 2026-3-21

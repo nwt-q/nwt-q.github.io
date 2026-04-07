@@ -1,10 +1,20 @@
-
+---
+title: Langchain
+tags: [大transform,Langchain]
+categories: [transform]
+date: 2026-3-21
+description: 懒汉式与俄汉式
+articleGPT: 懒汉式与俄汉式
+references:
+  - title: Java
+    url: https://github.com/imsyy/vitepress-theme-curve
+---
 
 ## Langchain
 
 Langchain基础架构
 
-![langchain](assets/1280X1280.PNG)
+![langchain](./assets/1280X1280.PNG)
 
 
 

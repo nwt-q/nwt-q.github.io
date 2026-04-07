@@ -1,7 +1,7 @@
 ---
 title: 大语言模型基础与架构
 tags: [transform,大模型]
-categories: [大语言模型基础]
+categories: [transform]
 date: 2026-3-23
 description: 大语言模型基础
 articleGPT: 大语言模型基础

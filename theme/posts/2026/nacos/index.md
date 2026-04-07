@@ -1,3 +1,15 @@
+---
+title: nacos 常见问题
+tags: [nacos,中间件]
+categories: [中间件]
+date: 2026-3-28
+description:  nacos 常见问题
+articleGPT:  nacos 常见问题
+references:
+  - title: naocs
+    url: https://github.com/imsyy/vitepress-theme-curve
+---
+
 
 
 nacos 如何配置将自身注册到配置中心？

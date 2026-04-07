@@ -114,7 +114,10 @@ export default withPwa(
         },
       },
       // 服务器
+       // 服务器
       server: {
+        host: '0.0.0.0',
+        allowedHosts: ['01.jxoj.top','02.jxoj.top'],
         port: 9877,
       },
       // 构建
