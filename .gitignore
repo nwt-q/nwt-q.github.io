@@ -1,3 +1,5 @@
 node_modules 
 cache
 docs/.vitepress/dist/*
+
+简历.md
