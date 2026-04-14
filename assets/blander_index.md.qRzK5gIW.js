@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.DMZhn_gK.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blander/index.md","filePath":"blander/index.md","lastUpdated":1776151933000}'),n={name:"blander/index.md"};function r(d,o,s,c,i,p){return a(),t("div")}const m=e(n,[["render",r]]);export{_ as __pageData,m as default};
