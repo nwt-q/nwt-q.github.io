@@ -14,7 +14,7 @@ references:
 
 Langchain基础架构
 
-![langchain](./assets/1280X1280.PNG)
+![langchain](./assets/allf.png)
 
 
 
@@ -28,6 +28,10 @@ Langchain基础架构
 - Agents：代理，决定模型采取哪些行动，执行并且观察流程，直到完成为止
 
 ## Models 
+
+
+
+![langchain](./assets/raglink.png)
 
 大模型应用开发包括：
 
